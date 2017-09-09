@@ -1,0 +1,62 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" expose-aside-when="large">
+        <ion-header-bar class="bar-stable">
+            <h1 class="title">Navigation</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <ion-item menu-close href="#/app/home">
+                    <i class="icon ion-ios-home-outline"></i>
+                    Home
+                </ion-item>
+                <ion-item menu-close href="#/app/directors">
+                    <i class="icon ion-ios-briefcase-outline"></i>
+                    Directors
+                </ion-item>
+                <ion-item menu-close href="#/app/teachers">
+                    <i class="icon ion-ios-color-wand"></i>
+                    Teachers
+                </ion-item>
+
+                <ion-item menu-close href="#/app/forms">
+                    <i class="icon ion-ios-paper-outline"></i>
+                    Forms
+                </ion-item>
+                <ion-item menu-close href="#/app/calendar">
+                    <i class="icon ion-ios-calendar-outline"></i>
+                    Calendar
+                </ion-item>
+                <ion-item menu-close href="#/app/map">
+                    <i class="icon ion-ios-location-outline"></i>
+                    Map
+                </ion-item>
+                <ion-item menu-close href="#/app/gallery">
+                    <i class="icon ion-ios-camera-outline"></i>
+                    Gallery
+                </ion-item>
+
+                <ion-item menu-close ng-click="login()">
+                    Login
+                </ion-item>
+
+
+                <ion-item menu-close href="#/app/cms" class="positive" ng-show="isAuthenticated">
+                    <i class="icon ion-ios-compose-outline"></i>
+                    Manage Content
+                </ion-item>
+
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

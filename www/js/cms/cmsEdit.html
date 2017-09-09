@@ -1,0 +1,19 @@
+<ion-view view-title="Text and Visibility">
+  <ion-content>
+      <form ng-submit="saveCmsData()">
+          <div class="list">
+              <ion-toggle ng-model="smcData.show" toggle-class="toggle-calm">Show:</ion-toggle>
+              <label class="item item-input">
+                  <span class="input-label">Text :</span>
+                  <input type="text" ng-model="smcData.text" placeholder="Please enter Text">
+              </label>
+              <label class="item">
+                  <button class="button button-block button-positive" type="submit">Save</button>
+              </label>              
+              <label class="item">
+                  <button class="button button-block button-stable"  type="button" ng-click="cancelCmsDataEdit()">Cancel</button>
+              </label>              
+          </div>
+      </form>
+  </ion-content>
+</ion-view>

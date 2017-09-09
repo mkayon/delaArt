@@ -1,0 +1,27 @@
+<ion-view view-title="Gallery">
+    <ion-content >
+        <div class="padding">
+            <ion-slide-box controller="galleryController" pager-click="navSlide(index)" auto-play="true" does-continue="true" show-pager="true">
+                <ion-slide ng-repeat="image in images">
+                    
+                    <div class="padding">
+                        <div class="padding item-divider">
+                            <h5>Slide {{image.id}}</h5>
+                        </div>
+                        <br/>
+                        <div>
+                            <img style="width: 100%" src="{{image.src}}">
+                        </div>
+                        <br />
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+
+        </div>
+    </ion-content>
+
+    <div class="bar bar-footer bar-stable">
+        
+        <div class="title">de la Arts Place</div>
+    </div>
+</ion-view>

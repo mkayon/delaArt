@@ -1,0 +1,26 @@
+/* Empty. Add your own CSS if you like */
+
+#map {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.scroll {
+  height: 100%;
+}
+
+.gallery {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+ .slider { height: 100%; text-align: center }
+
+
+ .spinner svg {
+  width: 64px;
+  height: 64px;
+  stroke: #FFF;
+  fill: #FFF;
+}

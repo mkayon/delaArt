@@ -1,0 +1,144 @@
+<ion-view view-title="Welcome">
+    
+    
+    <!--<ion-nav-buttons side="right">
+        <a class="button button-small button-clear icon  ion-ios-information-outline" ng-click="showInfoActions()"></a> &nbsp;
+        <a class="button button-small button-clear icon ion-social-facebook button-positive" ng-click="showFaceBook()" ></a>
+    </ion-nav-buttons>-->
+    
+    <ion-content>
+
+        
+        <!--<div class="card">
+                <div class="item item-text-wrap ">
+                    <h2 class="assertive assertive-border">{{viewModel.warning}}</h2>
+                </div>
+            </div>-->
+        <!--<div class="padding">
+                <div class="item item-text-wrap">
+                    <div ng-repeat="message in viewModel.headerMessages">
+                        <span>{{message}}</span>
+                    </div>
+                </div>
+            </div>-->
+
+        <div class="card" ng-show="viewModel.showWarning">
+            <div class="item item-text-wrap text-center">
+                <i class="icon ion-information-circled assertive"></i>
+                <span class="assertive assertive-border"><strong>{{viewModel.warning}}</strong></span>
+            </div>
+        </div>
+
+
+        <!--<div class="padding">
+
+            <div class="row">
+                <div class="col" style="max-height: 10%;">
+                    <img src="images/dela2.png" style="width:100%; height: 100%" alt="De la Arts Place" />
+                </div>
+                <div class="col-33 col-offset-10">
+
+                    <a class="button button-large1 icon  ion-information button-energized" ng-click="showInfoActions()"></a>
+                    <a class="button button-large1 icon ion-social-facebook-outline button-positive" href="https://www.facebook.com/De-la-Dance-Center-168222577863"></a>
+
+                </div>
+            </div>
+        </div>-->
+        
+        <div class="padding-left padding-top text-center">
+            <img src="img/dela2.png" style="width:50%; height: 50%" alt="De la Arts Place" />            
+        </div>
+
+        <div class="list list-inset">
+            <div class="item item-text-wrap text-center" ng-show="viewModel.showCurrentSession">
+                <span class="royal"><strong>{{::viewModel.currentSession}}</strong></span>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="item item-text-wrap">
+                de la welcomes all who love dance, all kinds of dance, and all kinds of dancers.  We believe dance should be joyful and fun. We believe dance is part of all our lives. We treat you honestly, directly and with care. We encourage your passion. We will challenge and teach you. Integrity, Honesty and Artistry guide us.
+            </div>
+        </div>
+
+            <div class="list list-inset">
+
+
+                <!--<div class="item item-text-wrap text-center" ng-show="viewModel.showCallAboutClassesTitle">
+                <a class="button button-block button-energized icon-left ion-ios-telephone  text-center" href="tel:+1-513-871-0914">{{::viewModel.callAboutClassesTitle}}</a>
+            </div>-->
+
+                <a class="item item-icon-left item-icon-right " ng-show="viewModel.showCallAboutClassesTitle" href="tel:+1-513-871-0914">
+                    <i class="icon ion-ios-telephone energized"></i>
+                    {{viewModel.callAboutClassesTitle}}
+                    <i class="icon ion-ios-arrow-forward"></i>
+                </a>
+
+                <a class="item item-icon-left item-icon-right" href="mailto:delaartsplace@earthlink.net">
+                    <i class="icon ion-ios-email-outline"></i>
+                     delaartsplace@earthlink.net
+                    <i class="icon ion-ios-arrow-forward"></i>
+                </a>
+
+
+                <a class="item item-icon-left item-icon-right" href="#" ng-click="showFaceBook()">
+                    <i class="icon ion-social-facebook positive"></i>
+                    See us on Facebook
+                    <i class="icon ion-ios-arrow-forward"></i>
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <!--<div class="padding item-text-wrap">
+                Our mission is to offer classical ballet training of the highest quality from the beginner through the professional.
+            </div>-->
+                <!--<div class="padding item-text-wrap">
+                    de la welcomes all who love dance, all kinds of dance, and all kinds of dancers.  We believe dance should be joyful and fun. We believe dance is part of all our lives. We treat you honestly, directly and with care. We encourage your passion. We will challenge and teach you. Integrity, Honesty and Artistry guide us.
+                </div>-->
+                <!--<div class="padding item-text-wrap">
+                The studios are located in the heart of the hip Columbia Tusculum neighborhood in Cincinnati, Ohio. Upon entering the studios, you will find yourself welcomed into a friendly, lively and creative  atmosphere. The large studios offer climate control, plenty of room for movement, and  soft wood sprung dance floors. From our Children's Division to our Adult and Open Division to our Academy there is something for everyone. Come dance with us!
+            </div>-->
+                <!--<div class="padding item-text-wrap">
+
+                If it seems like every young person you see has a smart phone in their hand, you’re not far wrong. Smartphone ownership is reaching saturation levels among people in their 20s, a survey out Thursday found.
+
+                A whopping 86% of people aged 18 to 29 have a smart phone, the survey by the Pew Research Center found.
+
+                That compares with 83% of those ages 30 to 49.
+
+                All told, 68% of adults have a smartphone.
+
+                The only group more likely to have a smartphone than millennials was people living in households earning $75,000 or more annually, Pew found. There, 87% had them.
+
+                Overall, cell phone ownership has become the norm. A stunning 92% of U.S. adults own a mobile phone of some sort. That’s up from 64% just 11 years ago.
+            </div>-->
+
+            </div>
+            <!--<div class="list card">
+            <div class="item">
+                <ion-list>
+                    <ion-item ng-repeat="message in viewModel.headerMessages">
+                        <div>{{message}}</div>
+                    </ion-item>
+                </ion-list>
+            </div>
+            <div class="item item-body">
+                <img src="/images/dsc_0389_hr.jpeg" />
+            </div>
+        </div>-->
+
+
+            <p class="text-center">
+                2 + 3 = {{2+3}}
+            </p>
+
+</ion-content>
+
+    <div class="bar bar-footer bar-positive" ng-show="isUserAuthenticated()">
+            <div class="title">Welcome Admin!</div>            
+        </div>
+
+</ion-view>
